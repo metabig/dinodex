@@ -1,7 +1,7 @@
 import { createClient } from '@/utils/supabase/server';
 import { cookies } from 'next/headers';
 
-function GroupCard({ grup, position }) {
+function GroupCard({ grup, position }: any) {
   return <div className="min-h-28 flex bg-white p-3 rounded-md shadow-sm gap-x-4">
     <span className="self-center text-gray-300 text-lg font-semibold">{position}</span>
     <div className="self-center flex justify-between w-full gap-x-3">
