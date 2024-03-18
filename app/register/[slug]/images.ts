@@ -1,29 +1,29 @@
 "use server";
 import dinos from "../../public/dino.jpg";
 import Xokas from "../../public/ELXOKAS.jpg";
-import AAA from "../../public/04BF1585.webp";
-import AAB from "../../public/4DC1DB04.webp";
-import AAC from "../../public/5DE9A8FF.webp";
-import AAD from "../../public/6BABEBFB.webp";
-import AAE from "../../public/9A300D71.webp";
-import AAF from "../../public/CCD632EF.webp";
-import AAG from "../../public/DA6CD74B.webp";
-import AAH from "../../public/E2E31BC9.webp";
+import AAA from "../../public/AAA.webp";
+import AAB from "../../public/AAB.webp";
+import AAC from "../../public/AAC.webp";
+import AAD from "../../public/AAD.webp";
+import AAE from "../../public/AAE.webp";
+import AAF from "../../public/AAF.webp";
+import AAG from "../../public/AAG.webp";
+import AAH from "../../public/AAH.webp";
 
 interface ImageMap {
   [key: string]: string;
 }
 
 const imageMap: ImageMap = {
-  "ElXokas": Xokas.src,
-  "04BF1585": AAA.src,
-  "4DC1DB04": AAB.src,
-  "5DE9A8FF": AAC.src,
-  "6BABEBFB": AAD.src,
-  "9A300D71": AAE.src,
-  "CCD632EF": AAF.src,
-  "DA6CD74B": AAG.src,
-  "E2E31BC9": AAH.src,
+  ElXokas: Xokas.src,
+  [process.env.VAR_AAA as string]: AAA.src,
+  [process.env.VAR_AAB as string]: AAB.src,
+  [process.env.VAR_AAC as string]: AAC.src,
+  [process.env.VAR_AAD as string]: AAD.src,
+  [process.env.VAR_AAE as string]: AAE.src,
+  [process.env.VAR_AAF as string]: AAF.src,
+  [process.env.VAR_AAG as string]: AAG.src,
+  [process.env.VAR_AAH as string]: AAH.src,
 };
 
 export default async function getDinoImg(dino_code: string) {
