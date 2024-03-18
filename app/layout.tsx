@@ -1,5 +1,6 @@
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
+import clsx from "clsx";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -17,8 +18,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className}>
-      <body className="bg-gray-50 text-foreground">
+    <html
+      lang="en"
+      className={(clsx(GeistSans.className), "min-h-screen min-w-screen")}
+    >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Frijole&family=Rubik+Mono+One&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-[url('fons.webp')] text-foreground backdrop-blur-sm">
         <main className="min-h-screen flex flex-col items-center">
           {children}
         </main>
