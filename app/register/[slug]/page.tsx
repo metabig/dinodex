@@ -1,10 +1,9 @@
 import { createClient } from "@/utils/supabase/server";
 import { cookies } from "next/headers";
 import Image from "next/image";
-import dinos from "../../public/dino.jpg";
-import Xokas from "../../public/ELXOKAS.jpg";
 import Modal from "./modal";
 import { notFound } from "next/navigation";
+import getDinoImg from "./images";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const cookieStore = cookies();
@@ -25,29 +24,15 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <h1 className="text-3xl tracking-tight text-gray-900 py-2 fancy">
           {dino.nom_dinosaure}
         </h1>
-        {dino.nom_comu === "ElXokas" ? (
-          <Image
-            className="main-mask"
-            src={Xokas.src}
-            width={500}
-            height={500}
-            alt={""}
-            priority
-          />
-        ) : (
-          <Image
-            className="main-mask"
-            src={dinos.src}
-            alt={""}
-            priority
-            height={1500}
-            width={500}
-          />
-        )}
-        <div className="main-mask bg-white px-5 pb-4 mt-5">
-          <h2 className="mt-2 text-sm font-bold tracking-tight text-gray-900 sm:text-2xl md:text-4xl py-2">
-            Descripció
-          </h2>
+        <Image
+          className="main-mask"
+          src={await getDinoImg(dino.codi_random)}
+          alt={""}
+          priority
+          height={1500}
+          width={500}
+        />
+        <div className="main-mask bg-white px-5 py-4 mt-5">
           <p className="text-sm text-gray-500">
             {dino.descripcio
               ? dino.descripcio
