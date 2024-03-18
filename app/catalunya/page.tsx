@@ -20,7 +20,6 @@ export default async function Index() {
 
     return <pre>{JSON.stringify(res)}</pre>;
   } catch (error) {
-    console.error("Error fetching data:", error.message);
     return <pre>Error fetching data</pre>;
   }
 }
