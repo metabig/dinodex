@@ -27,6 +27,73 @@ import AAW from "../../public/AAW.webp";
 import AAX from "../../public/AAX.webp";
 import AAY from "../../public/AAY.webp";
 import AAZ from "../../public/AAZ.webp";
+import ABA from "../../public/ABA.webp";
+import ABB from "../../public/ABB.webp";
+import ABC from "../../public/ABC.webp";
+import ABD from "../../public/ABD.webp";
+import ABF from "../../public/ABF.webp";
+import ABG from "../../public/ABG.webp";
+import ABH from "../../public/ABH.webp";
+import ABI from "../../public/ABI.webp";
+import ABJ from "../../public/ABJ.webp";
+import ABK from "../../public/ABK.webp";
+import ABL from "../../public/ABL.webp";
+import ABM from "../../public/ABM.webp";
+import ABN from "../../public/ABN.webp";
+import ABO from "../../public/ABO.webp";
+import ABP from "../../public/ABP.webp";
+import ABQ from "../../public/ABQ.webp";
+import ABR from "../../public/ABR.webp";
+import ABS from "../../public/ABS.webp";
+import ABT from "../../public/ABT.webp";
+import ABU from "../../public/ABU.webp";
+import ABV from "../../public/ABV.webp";
+import ABW from "../../public/ABW.webp";
+import ABX from "../../public/ABX.webp";
+import ABY from "../../public/ABY.webp";
+import ABZ from "../../public/ABZ.webp";
+import ACA from "../../public/ACA.webp";
+import ACB from "../../public/ACB.webp";
+import ACC from "../../public/ACC.webp";
+import ACD from "../../public/ACD.webp";
+import ACE from "../../public/ACE.webp";
+import ACF from "../../public/ACF.webp";
+import ACG from "../../public/ACG.webp";
+import ACH from "../../public/ACH.webp";
+import ACI from "../../public/ACI.webp";
+import ACJ from "../../public/ACJ.webp";
+import ACK from "../../public/ACK.webp";
+import ACL from "../../public/ACL.webp";
+import ACM from "../../public/ACM.webp";
+import ACN from "../../public/ACN.webp";
+import ACO from "../../public/ACO.webp";
+import ACP from "../../public/ACP.webp";
+import ACQ from "../../public/ACQ.webp";
+import ACR from "../../public/ACR.webp";
+import ACS from "../../public/ACS.webp";
+import ACT from "../../public/ACT.webp";
+import ACU from "../../public/ACU.webp";
+import ACV from "../../public/ACV.webp";
+import ACW from "../../public/ACW.webp";
+import ACX from "../../public/ACX.webp";
+import ACY from "../../public/ACY.webp";
+import ACZ from "../../public/ACZ.webp";
+import ADA from "../../public/ADA.webp";
+import ADB from "../../public/ADB.webp";
+import ADC from "../../public/ADC.webp";
+import ADD from "../../public/ADD.webp";
+import ADE from "../../public/ADE.webp";
+import ADF from "../../public/ADF.webp";
+import ADG from "../../public/ADG.webp";
+import ADH from "../../public/ADH.webp";
+import ADI from "../../public/ADI.webp";
+import ADJ from "../../public/ADJ.webp";
+import ADK from "../../public/ADK.webp";
+import ADL from "../../public/ADL.webp";
+import ADM from "../../public/ADM.webp";
+import ADN from "../../public/ADN.webp";
+import ADO from "../../public/ADO.webp";
+import ADP from "../../public/ADP.webp";
 
 interface ImageMap {
   [key: string]: string;
@@ -60,6 +127,73 @@ const imageMap: ImageMap = {
   [process.env.VAR_AAX as string]: AAX.src,
   [process.env.VAR_AAY as string]: AAY.src,
   [process.env.VAR_AAZ as string]: AAZ.src,
+  [process.env.VAR_ABA as string]: ABA.src,
+  [process.env.VAR_ABB as string]: ABB.src,
+  [process.env.VAR_ABC as string]: ABC.src,
+  [process.env.VAR_ABD as string]: ABD.src,
+  [process.env.VAR_ABF as string]: ABF.src,
+  [process.env.VAR_ABG as string]: ABG.src,
+  [process.env.VAR_ABH as string]: ABH.src,
+  [process.env.VAR_ABI as string]: ABI.src,
+  [process.env.VAR_ABJ as string]: ABJ.src,
+  [process.env.VAR_ABK as string]: ABK.src,
+  [process.env.VAR_ABL as string]: ABL.src,
+  [process.env.VAR_ABM as string]: ABM.src,
+  [process.env.VAR_ABN as string]: ABN.src,
+  [process.env.VAR_ABO as string]: ABO.src,
+  [process.env.VAR_ABP as string]: ABP.src,
+  [process.env.VAR_ABQ as string]: ABQ.src,
+  [process.env.VAR_ABR as string]: ABR.src,
+  [process.env.VAR_ABS as string]: ABS.src,
+  [process.env.VAR_ABT as string]: ABT.src,
+  [process.env.VAR_ABU as string]: ABU.src,
+  [process.env.VAR_ABV as string]: ABV.src,
+  [process.env.VAR_ABW as string]: ABW.src,
+  [process.env.VAR_ABX as string]: ABX.src,
+  [process.env.VAR_ABY as string]: ABY.src,
+  [process.env.VAR_ABZ as string]: ABZ.src,
+  [process.env.VAR_ACA as string]: ACA.src,
+  [process.env.VAR_ACB as string]: ACB.src,
+  [process.env.VAR_ACC as string]: ACC.src,
+  [process.env.VAR_ACD as string]: ACD.src,
+  [process.env.VAR_ACE as string]: ACE.src,
+  [process.env.VAR_ACF as string]: ACF.src,
+  [process.env.VAR_ACG as string]: ACG.src,
+  [process.env.VAR_ACH as string]: ACH.src,
+  [process.env.VAR_ACI as string]: ACI.src,
+  [process.env.VAR_ACJ as string]: ACJ.src,
+  [process.env.VAR_ACK as string]: ACK.src,
+  [process.env.VAR_ACL as string]: ACL.src,
+  [process.env.VAR_ACM as string]: ACM.src,
+  [process.env.VAR_ACN as string]: ACN.src,
+  [process.env.VAR_ACO as string]: ACO.src,
+  [process.env.VAR_ACP as string]: ACP.src,
+  [process.env.VAR_ACQ as string]: ACQ.src,
+  [process.env.VAR_ACR as string]: ACR.src,
+  [process.env.VAR_ACS as string]: ACS.src,
+  [process.env.VAR_ACT as string]: ACT.src,
+  [process.env.VAR_ACU as string]: ACU.src,
+  [process.env.VAR_ACV as string]: ACV.src,
+  [process.env.VAR_ACW as string]: ACW.src,
+  [process.env.VAR_ACX as string]: ACX.src,
+  [process.env.VAR_ACY as string]: ACY.src,
+  [process.env.VAR_ACZ as string]: ACZ.src,
+  [process.env.VAR_ADA as string]: ADA.src,
+  [process.env.VAR_ADB as string]: ADB.src,
+  [process.env.VAR_ADC as string]: ADC.src,
+  [process.env.VAR_ADD as string]: ADD.src,
+  [process.env.VAR_ADE as string]: ADE.src,
+  [process.env.VAR_ADF as string]: ADF.src,
+  [process.env.VAR_ADG as string]: ADG.src,
+  [process.env.VAR_ADH as string]: ADH.src,
+  [process.env.VAR_ADI as string]: ADI.src,
+  [process.env.VAR_ADJ as string]: ADJ.src,
+  [process.env.VAR_ADK as string]: ADK.src,
+  [process.env.VAR_ADL as string]: ADL.src,
+  [process.env.VAR_ADM as string]: ADM.src,
+  [process.env.VAR_ADN as string]: ADN.src,
+  [process.env.VAR_ADO as string]: ADO.src,
+  [process.env.VAR_ADP as string]: ADP.src,
 };
 
 export default async function getDinoImg(dino_code: string) {
