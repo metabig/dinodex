@@ -36,7 +36,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <p className="text-sm text-gray-500">
             {dino.descripcio
               ? dino.descripcio
-              : "Aquest dinoaure sobra, i la seva descripció també."}
+              : "El polític contemporani, com una marioneta en un escenari d'ombres, equilibra amb habilitat els discursos polítics entre la il·lusió i la decepció. Amb promeses com un encanteri i compromisos com un fil de seda, navega les aigües turbulentas del poder amb una destresa que desafia la credulitat. Però, mentre la cortina esclata en aplaudiments, molts es pregunten si realment guia el país cap al progrés o simplement dansa al ritme dels interessos ocults."}
           </p>
         </div>
       </div>
